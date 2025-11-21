@@ -121,7 +121,7 @@ jobs:
       - name: Merge previously generated sboms
         run: >
           cyclonedx merge
-          --input-files file1.json file2.json…
+          --input-files file1.json file2.json
           --output-file output.json
           --name output-project-name
           --version "build-${{ github.run_number }}"
