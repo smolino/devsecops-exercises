@@ -83,7 +83,7 @@ jobs:
           --spec-version="1.5"
           --project-name="${{ matrix.project }}"
           --project-version="${{ github.run_number }}"
-          -o "${{ matrix.project }}-docker_bom.json" ${{ matrix.project }}:latest
+          -o "${{ matrix.project }}-docker_bom.json"
           image:tag
 
       - name: upload Artifacts
